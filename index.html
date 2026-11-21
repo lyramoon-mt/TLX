@@ -15,6 +15,7 @@
             --accent-red: #ff1e42;
             --accent-crimson: #99001a;
             --accent-cyan: #00f0ff;
+            --accent-gold: #fbbf24;
             --text-main: #f4f6fb;
             --text-muted: #8b94a8;
         }
@@ -319,6 +320,12 @@
             color: #34d399;
         }
 
+        .badge.finance {
+            background: rgba(251, 191, 36, 0.12);
+            border-color: rgba(251, 191, 36, 0.35);
+            color: var(--accent-gold);
+        }
+
         .card h3 {
             font-family: 'Orbitron', sans-serif;
             font-size: 1.22rem;
@@ -405,6 +412,15 @@
             box-shadow: 0 8px 28px rgba(0, 198, 255, 0.5);
         }
 
+        .action-btn.gold-btn {
+            background: linear-gradient(135deg, #f59e0b, #b45309);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.25);
+        }
+
+        .action-btn.gold-btn:hover {
+            box-shadow: 0 8px 28px rgba(245, 158, 11, 0.5);
+        }
+
         /* Footer */
         footer {
             border-top: 1px solid var(--card-border);
@@ -489,10 +505,10 @@
             POWERED BY DEVIL
         </div>
         <h1>MKR GROUP OF COMPANY</h1>
-        <p>Central command hub for all MKR digital platforms, AI chat systems, domain verification engines, and next-gen browser applications.</p>
+        <p>Central command hub for all MKR digital platforms, finance portals, AI chat systems, domain verification engines, and next-gen browser applications.</p>
 
         <div class="filter-bar">
-            <button class="filter-btn active" data-filter="all">All Platforms (6)</button>
+            <button class="filter-btn active" data-filter="all">All Platforms (7)</button>
             <button class="filter-btn" data-filter="web">Web Portals</button>
             <button class="filter-btn" data-filter="tools">AI & Domain Tools</button>
             <button class="filter-btn" data-filter="app">Mobile APK</button>
@@ -529,7 +545,33 @@
                 </div>
             </article>
 
-            <!-- 2. MKR DRAW -->
+            <!-- 2. MKR MONEY -->
+            <article class="card" data-category="web">
+                <div>
+                    <div class="card-top">
+                        <div class="icon-box" style="color: var(--accent-gold); border-color: rgba(251, 191, 36, 0.35);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <span class="badge finance">Finance & Earnings</span>
+                    </div>
+                    <h3>MKR MONEY</h3>
+                    <p>Official MKR financial platform, digital wallet rewards, and earning ecosystem.</p>
+                </div>
+                <div>
+                    <div class="url-preview">
+                        <span>mkr-money.oneapp.dev</span>
+                        <button class="copy-btn" onclick="copyLink('https://mkr-money.oneapp.dev')" title="Copy URL">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                        </button>
+                    </div>
+                    <a href="https://mkr-money.oneapp.dev" target="_blank" rel="noopener noreferrer" class="action-btn gold-btn">
+                        Open MKR Money
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- 3. MKR DRAW -->
             <article class="card" data-category="web">
                 <div>
                     <div class="card-top">
@@ -555,7 +597,7 @@
                 </div>
             </article>
 
-            <!-- 3. MKR BROWSER WEB -->
+            <!-- 4. MKR BROWSER WEB -->
             <article class="card" data-category="web">
                 <div>
                     <div class="card-top">
@@ -581,7 +623,7 @@
                 </div>
             </article>
 
-            <!-- 4. MKR DOMAIN VERIFIED -->
+            <!-- 5. MKR DOMAIN VERIFIED -->
             <article class="card" data-category="tools">
                 <div>
                     <div class="card-top">
@@ -607,7 +649,7 @@
                 </div>
             </article>
 
-            <!-- 5. ONLINE CHAT WEB -->
+            <!-- 6. ONLINE CHAT WEB -->
             <article class="card" data-category="tools">
                 <div>
                     <div class="card-top">
@@ -633,7 +675,7 @@
                 </div>
             </article>
 
-            <!-- 6. MKR BROWSER APK DOWNLOAD -->
+            <!-- 7. MKR BROWSER APK DOWNLOAD -->
             <article class="card" data-category="app">
                 <div>
                     <div class="card-top">
